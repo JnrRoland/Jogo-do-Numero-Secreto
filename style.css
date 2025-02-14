@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    background: linear-gradient(#837cbf 0%, #1c1e31 33%,#10111C 66%, #07070C 100%);
+    height: 100vh; /* ocupa toda a largura da tela */
+    display: flex;
+    align-items: center;  /* vertical */
+    justify-content: center; /* horizoltal */
+}
+
+body::before {
+    background-image: url("img/code.png");
+    background-repeat: no-repeat; /* não repetira a imagem */
+    background-position: right;
+    content:"";
+    display: block; /* ocupa toda a largura disponivel */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.container{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 24px;
+    border: 1px solid #9084fa;
+    box-shadow: 4px 4px 15px 2px #07070C;
+    position: relative;
+    background-image: url("img/Ruido.png");
+    /* background-size: 100% 100%; */
+}
+
+.container__conteudo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.container__inputs {
+    flex: 1;
+    padding: 3rem;
+}
+
+.container__botao {
+    border-radius: 10px;
+    background: #9084fa;
+    padding: 10px 18px;
+    width: 100%;
+    font-size: 22px;
+    font-weight: 700;
+    border: none;
+    margin-top: 1rem;
+}
+
+.container__texto {
+    margin: 16px 0 16px 0;
+}
+
+.container__texto-lilas{
+    color: #9084fa;
+}
+
+.container__input{
+    width: 100%;
+    height: 72px;
+    border-radius: 16px;
+    background-color: white;
+    border: none;
+    color: #837cbf;
+    padding: 2rem;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: 'inter', sans-serif;
+}
+
+.container__botoes{
+    display: flex;
+    gap: 2rem;
+}
+
+h1 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 50px;
+    padding-bottom: 2rem;
+}
+
+p,
+button{
+    font-family: 'Inter', sans-serif;
+}
+
+.texto_paragrafo{
+    font-size: 32px;
+    font-weight: 400;
+}
+
+button:disabled{
+    background-color: grey;
+}
+
